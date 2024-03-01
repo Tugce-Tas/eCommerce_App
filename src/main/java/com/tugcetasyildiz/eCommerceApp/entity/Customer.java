@@ -45,7 +45,7 @@ public class Customer {
     @Column(name = "GENDER", length = 30)
     private EnumGender enumGender;
 
-    @OneToMany
+    @OneToMany(mappedBy = "customerId")
     private List<Invoice> invoiceList;
 
 }

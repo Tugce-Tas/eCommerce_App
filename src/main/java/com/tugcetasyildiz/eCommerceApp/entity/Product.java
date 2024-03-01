@@ -20,7 +20,7 @@ public class Product {
     @Column(name = "NAME", length = 100, nullable = false)
     private String name;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "productList")
     private List<Invoice> invoiceList;
 
     private Double price;

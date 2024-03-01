@@ -24,6 +24,6 @@ public class Company {
     @Enumerated(EnumType.STRING)
     private EnumSector sector;
 
-    @OneToMany
+    @OneToMany(mappedBy = "companyId")
     private List<Invoice> invoiceList;
 }
